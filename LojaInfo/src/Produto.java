@@ -21,13 +21,11 @@ public class Produto {
         }
     }
 
-    public boolean removerDoEstoque(int quantidade) {
+    public void removerDoEstoque(int quantidade) {
         if (quantidade <= 0 || quantidade > quantidadeEmEstoque) {
             System.out.println("Quantidade a remover inválida!");
-            return false;
         } else {
             this.quantidadeEmEstoque -= quantidade;
-            return true;
         }
     }
 
